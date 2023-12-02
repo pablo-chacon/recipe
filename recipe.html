@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Table</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Brownie Base recipe.</h1>
+        <a href="https://www.arla.se/recept/brownie/">Original recipe.</a><br>
+        <a href="reviews.html">Reviews.</a><br>
+        <a href="index.html">Back to start page.</a>
+      </nav>
+    <!-- Ingredient Table -->
+    <section id="ingredient-table" class="container mt-5">
+        <h2>Ingredient Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                    <th>Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Roasted nuts</td>
+                    <td id="roastedNutsAmount">100</td>
+                    <td>g</td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td id="butterAmount">250</td>
+                    <td>g</td>
+                </tr>
+                <tr>
+                    <td>Cacao</td>
+                    <td id="cacaoAmount">2</td>
+                    <td>dl</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td id="sugarAmount">4.5</td>
+                    <td>dl</td>
+                </tr>
+                <tr>
+                    <td>Egg</td>
+                    <td id="eggAmount">4</td>
+                    <td>pcs</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td id="saltAmount">2</td>
+                    <td>teaspoon</td>
+                </tr>
+                <tr>
+                    <td>Vanilla powder</td>
+                    <td id="vanillaPowderAmount">2</td>
+                    <td>pinch</td>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td id="flourAmount">3</td>
+                    <td>dl</td>
+                </tr>
+                <tr>
+                    <td>Baking soda</td>
+                    <td id="bakingSodaAmount">0.5</td>
+                    <td>teaspoon</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <label for="batchSize">Batch Size:</label>
+            <input type="number" class="form-control" id="batchSize" placeholder="Enter batch size" min="1" step="0.1">
+        </div>
+    </section>
+
+    <!-- Bootstrap & jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
